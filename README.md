@@ -14,7 +14,7 @@ b) A Conv3D + hyperparameter tuning model using Bayesian optimization.
 c) A Conv3D + BiLSTM + Attention model for temporal sequence modeling.
 
 ‎Dataset Information:
-UCF50 [1] action recognition dataset. Where videos are categorized into 50–101 action classes. The data format are .avi or .mpg video files organized by class folders.
+UCF50 [1] action recognition dataset. Where videos are categorized into 50 action classes. The data format are .avi or .mpg video files organized by class folders.
 
 Code Information:
 The following functions are used for video frame extraction and visualization
