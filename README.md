@@ -2,7 +2,7 @@
 
 Description:
 The proposed models implements human action recognition on video datasets using 3D Convolutional Neural Networks (Conv3D), Bidirectional LSTMs, and an Attention mechanism. The workflow includes:
-a) Video-frames extraction from UCF50/UCF101 dataset.
+a) Video-frames extraction from UCF50 dataset.
 b) Frames preprocessing such as resizing and normalization.
 c) Dataset splitting and parapartion for models.
 e) Model training and tuning using different Keras Tuner such as Hyperband, Bayesian Optimization, and Random Search.
@@ -14,7 +14,7 @@ b) A Conv3D + hyperparameter tuning model using Bayesian optimization.
 c) A Conv3D + BiLSTM + Attention model for temporal sequence modeling.
 
 ‎Dataset Information:
-UCF50 [1] and UCF101 [2] action recognition datasets. Where videos are categorized into 50–101 action classes. The data format are .avi or .mpg video files organized by class folders.
+UCF50 [1] action recognition dataset. Where videos are categorized into 50–101 action classes. The data format are .avi or .mpg video files organized by class folders.
 
 Code Information:
 The following functions are used for video frame extraction and visualization
@@ -39,10 +39,8 @@ tuner.search(train_ds, validation_data=valid_ds, epochs=50)
 
 In evaluation step, the method classification_report() is used for precision, recall, F1-score. Also, confusion_matrix() method is used to plotted with seaborn.
 
-
 Usage Instructions:
-The used datasets are placed in the correct path in Kaggle input section.
-
+The used dataset are placed in the correct path in Kaggle input section.
 
 Requirements:
 The proposed models need the following dependencies:
@@ -76,4 +74,3 @@ Hyperparameter tuning is used to tune the number of Conv3D layers, filters, drop
 
 -----------------
 [1] https://www.crcv.ucf.edu/data/UCF50.php
-[2] https://www.crcv.ucf.edu/data/UCF101.php
