@@ -1,0 +1,1 @@
+# Deep-Spatiotemporal-Human-Activity-Recognition-Using-an-Optimized-3D-CNN-Model
